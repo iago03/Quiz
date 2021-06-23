@@ -1,0 +1,20 @@
+.form div{
+    margin-bottom: 20px;
+}
+
+.form div select{
+    margin: 5px 0px 15px; 
+}
+
+.form div select:focus,.form div input{
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+.form div label{
+    font-size: 15px;
+}
+
+.validation{
+    border-color: red!important;
+}

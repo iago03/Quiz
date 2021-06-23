@@ -1,0 +1,12 @@
+.end h2{
+    text-align: center;
+    margin: 0px 0px 30px;
+}
+
+.end article{
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

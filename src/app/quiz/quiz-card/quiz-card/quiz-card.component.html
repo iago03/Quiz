@@ -1,0 +1,39 @@
+<section class="card">
+    <h1>{{question.Question}}</h1>
+    <h5
+    [ngClass]="{'block':chooseTheAnswer,'none':!chooseTheAnswer}"
+    >Choose the answer</h5>
+    <div class="form-check">
+        <input 
+        [(ngModel)]="question.Answers"
+        class="form-check-input" type="radio" value="{{question.a}}" name="question" id="a">
+        <label class="form-check-label" for="a">
+          {{question.a}}
+        </label>
+      </div>
+      <div class="form-check">
+        <input 
+        [(ngModel)]="question.Answers"
+        class="form-check-input" type="radio" value="{{question.b}}" name="question" id="b">
+        <label class="form-check-label" for="b">
+          {{question.b}}
+        </label>
+      </div>
+      <div class="form-check">
+        <input 
+        [(ngModel)]="question.Answers"
+        class="form-check-input" type="radio" value="{{question.c}}" name="question" id="c">
+        <label class="form-check-label" for="c">
+          {{question.c}}
+        </label>
+      </div>
+      <div class="form-check">
+        <input 
+        [(ngModel)]="question.Answers"
+        class="form-check-input" type="radio" value="{{question.d}}" name="question" id="d">
+        <label class="form-check-label" for="d">
+          {{question.d}}
+        </label>
+      </div>
+      <button (click)="nextQuestion()" class="btn btn-dark">next</button>
+</section>
